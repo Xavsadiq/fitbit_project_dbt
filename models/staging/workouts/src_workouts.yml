@@ -1,0 +1,7 @@
+version: 2
+
+sources: 
+  - name: raw_workouts
+    tables:
+      - name: recommended_routine
+      - name: ppl_skill_split
