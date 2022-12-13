@@ -8,8 +8,13 @@ workout_days as (
 
 final as (
     select 
-        hr.*,
-        if(date(hr.date) = date(wd.date), 1, 0) as workout_days
+        hr.date,
+        hr.resting_heart_rate,
+        hr.out_of_range_minutes,
+        hr.fat_burn_minutes,
+        hr.cardio_minutes,
+        hr.peak_minutes,
+        coalesce(wd.type, "None") as workout_type
     from heart_rate hr
     left join workout_days wd
     on date(hr.date) = date(wd.date)
