@@ -7,9 +7,9 @@ ppl as (
 ),
 
 combined as (
-    (select date from rr)
+    (select date, "Recommended Routine" as type from rr)
     union all
-    (select date from ppl)
+    (select date, "PPL Skill Split" as type from ppl)
 )
 
 select * from combined

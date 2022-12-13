@@ -4,4 +4,14 @@ sources:
   - name: raw_workouts
     tables:
       - name: recommended_routine
+        columns:
+          - name: date
+            tests: 
+              - unique
+              - not_null
       - name: ppl_skill_split
+        columns:
+          - name: date
+            tests: 
+              - unique
+              - not_null
