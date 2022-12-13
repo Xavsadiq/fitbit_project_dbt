@@ -17,4 +17,4 @@ Data is housed in Bigquery, where we then use dbt to make the transformations as
 
 Once the data is transformed and pushed back into Bigquery as 'Analytics', we can then use these production tables to power a [Looker Studio dashboard](https://datastudio.google.com/u/0/reporting/300aa1a3-6867-425e-a42d-72b4d98747d0/page/tEnnC).
 
-![Screenshot](https://github.com/Xavsadiq/personal-portfolio/blob/main/portfolio-snap.PNG "Portfolio Snapshot")
+![Screenshot](https://github.com/Xavsadiq/personal-portfolio/blob/main/src/health-dashboard.PNG "Portfolio Snapshot")
